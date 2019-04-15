@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/myHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/myName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ms.Zhang"
+        android:layout_below="@id/myHeader"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/myEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="di_zhang@145.com"
+        android:layout_below="@id/myName"
+        android:layout_marginLeft="20dp"/>
+
+</RelativeLayout>

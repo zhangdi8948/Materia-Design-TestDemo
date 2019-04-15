@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/wallet"
+            android:icon="@drawable/help"
+            android:title="我的钱包"/>
+        <item android:id="@+id/info"
+            android:icon="@drawable/help"
+            android:title="个人资料"/>
+        <item android:id="@+id/setting"
+            android:icon="@drawable/help"
+            android:title="设置"/>
+    </group>
+</menu>

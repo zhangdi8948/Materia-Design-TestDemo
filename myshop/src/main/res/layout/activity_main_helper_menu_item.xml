@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="20dp">
+
+    <TextView
+        android:id="@+id/plate_name"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Avocado"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/plate_cancel"
+        android:layout_width="@dimen/fab_margin"
+        android:layout_height="@dimen/fab_margin"
+        android:src="@drawable/cancel"
+        android:background="@drawable/circle_gray"/>
+
+</LinearLayout>

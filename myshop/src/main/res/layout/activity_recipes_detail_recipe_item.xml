@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+   <ImageView
+       android:layout_width="10dp"
+       android:layout_height="10dp"
+       android:background="@drawable/circle_purple"
+       android:layout_gravity="center_vertical"
+       android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/detail_recipe_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Place your egg in a small pot and cover with
+colde water. The water should be about an inch
+or so higher than the egg. Over high heat,
+thing your eggs to a rolling bod."/>
+
+</LinearLayout>

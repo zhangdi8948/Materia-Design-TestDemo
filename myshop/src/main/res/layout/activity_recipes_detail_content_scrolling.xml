@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".recipe_detail.RecipesDetailActivity"
+    tools:showIn="@layout/activity_recipes_detail">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="50dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_marginLeft="190dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/recipes_m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/help"
+                    android:text="30 m"
+                    android:gravity="center"
+                    android:transitionName="recipesM"/>
+
+                <TextView
+                    android:id="@+id/recipes_cal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/help"
+                    android:text="30 m"
+                    android:gravity="center"
+                    android:transitionName="recipesCal"/>
+
+                <TextView
+                    android:id="@+id/recipes_per"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/help"
+                    android:text="30 m"
+                    android:gravity="center"
+                    android:transitionName="recipesPer"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/detail_ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingredients:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="10dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/detail_ingredients_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layoutAnimation="@anim/recycler_item_anim"/>
+
+            <TextView
+                android:id="@+id/detail_recipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recipe:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/detail_recipe_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+
+            <ImageView
+                android:id="@+id/recipes_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right_arrow"
+                android:layout_margin="10dp"
+                android:transitionName="recipesNext"
+                android:background="@drawable/purple_circlecorner_rectangle"/>
+
+        </LinearLayout>
+
+        <com.example.myshop.common.MyCircleImageView
+            android:id="@+id/recipes_iv"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:transitionName="recipesIv"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.v4.widget.NestedScrollView>
